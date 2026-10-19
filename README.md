@@ -25,7 +25,7 @@ skills/
 
 ## 使用方式
 
-在 Codex 中，可以让 `$skill-installer` 从本仓库安装所需 Skill；也可以把**完整的单个 Skill 目录**放入个人 `$HOME/.agents/skills/`，或项目根目录的 `.agents/skills/`。不要只复制 `SKILL.md`，否则其中的相对参考链接会失效。具体发现位置和安装方式以[当前 Codex Skills 文档](https://learn.chatgpt.com/docs/build-skills)为准。
+将所需的**完整 Skill 目录**放到你使用的 AI Agent 支持的技能目录，或通过该工具的导入功能指定本仓库中的对应目录。不要只复制 `SKILL.md`，否则其中的 `references/` 相对链接会失效。技能发现位置与调用语法由具体工具决定；目录组织参考 [Agent Skills 规范](https://agentskills.io/specification)。
 
 安装后可直接在需求中点名，例如：
 
@@ -40,4 +40,4 @@ skills/
 - 编译通过、Demo 模拟通过和真实宿主三端验证是不同的结论；报告中应分别说明。
 - 公开问题或示例时，请移除 Token、密钥、账户信息和内部地址。
 
-参考资料：[KuiklyUI](https://github.com/Tencent-TDS/KuiklyUI)、[Kotlin Multiplatform 文档](https://kotlinlang.org/docs/multiplatform.html)、[OpenAI Skills 文档](https://learn.chatgpt.com/docs/build-skills)。本仓库的工作流与文字为独立整理，不代表上述项目的官方建议。
+参考资料：[KuiklyUI](https://github.com/Tencent-TDS/KuiklyUI)、[Kotlin Multiplatform 文档](https://kotlinlang.org/docs/multiplatform.html)、[Agent Skills 规范](https://agentskills.io/specification)。本仓库的工作流与文字为独立整理，不代表上述项目的官方建议。
